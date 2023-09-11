@@ -12,11 +12,13 @@ const hexToRgb = (hex: string) => {
       return '';
     }
     
-    const isValid = /^#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/.test(value);
+    let isValid = /^#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/.test(value);
     if (isValid) {
       const { r, g, b } = hexToRgb(value);
       return `rgb(${r}, ${g}, ${b})`;
     }
   
-    return 'Ошибка!';
+    return ("#fc2c08"); isValid = 'ошибка';
+    
+    
   };
